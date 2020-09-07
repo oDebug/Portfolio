@@ -12,13 +12,13 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: orange;
+  background: #6e6e6e;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: blue;
+  background-color: black;
   border-radius: 20px;
-  border: 3px solid orange;
+  border: 3px solid #2b2b2b;
 }
 
 h1 {
@@ -80,6 +80,15 @@ html {
   z-index: 100;
 }
 
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(min-content, 60px) min-content;
+      grid-template-rows: minmax(-webkit-min-content, 60px) -webkit-min-content;
+      grid-template-rows: minmax(min-content, 60px) min-content;
+  position: fixed;
+}
+
 nav .content {
   background-color: #000000c4;
   display: -ms-grid;
@@ -89,15 +98,6 @@ nav .content {
   -ms-flex-line-pack: space-evenly;
       align-content: space-evenly;
   /* filter: drop-shadow(-0.1em 0.3em .06em rgba(31, 0, 0, 0.253)); */
-}
-
-nav {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: minmax(min-content, 60px) min-content;
-      grid-template-rows: minmax(-webkit-min-content, 60px) -webkit-min-content;
-      grid-template-rows: minmax(min-content, 60px) min-content;
-  position: fixed;
 }
 
 nav a {
