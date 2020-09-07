@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import './nav';
+@import './variables';
 
 *{
     margin:0;
@@ -21,15 +23,14 @@
   }
 
 h1{
-    font-family: 'Italiana', serif;
+    font-family: $font;
     font-size: 4em;
 }
 
 html{
     scroll-behavior: smooth;
-    font-family: 'Nunito', sans-serif;
+    font-family: $bigFont;
 }
-
 
 .section-wrapper{
     display: grid;
@@ -77,54 +78,9 @@ section{
     height: 80vh;
 }
 
-.nav-container
-{
-    width: 100vw;
-    margin: auto;
-    z-index: 100;
-}
-
-nav{
-    display:grid;
-    grid-template-rows: minmax(min-content, 60px) min-content;
-    position: fixed;
-    .content{
-        background-color: #000000c4;
-        display: grid;
-        place-items: center;
-        grid-auto-flow: column;
-        align-content: space-evenly;
-        /* filter: drop-shadow(-0.1em 0.3em .06em rgba(31, 0, 0, 0.253)); */
-    }
-    a{
-        text-decoration: none;
-        color: white;
-    }
-    a:hover{
-        color: black;
-    }
-    ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        text-decoration: none;
-    }
-    li{
-        display: inline-block;
-    }
-}
-
-.nav-list{
-    display: grid;
-    grid-gap: 3em;
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(min-content, 90px);
-    font-family: 'Nunito', sans-serif;
-}
-
 #bigName{
     font-size: 6.5vw;
-    font-family: 'Italiana', serif;
+    font-family: $font;
     color: #ffffff9f;
     /* background: #0000005d; */
     /* background-image: linear-gradient(90deg,
@@ -136,7 +92,7 @@ nav{
     font-size: 1vw;
     color: #ffffff;
     /* filter: drop-shadow(-0.1em 0.3em .06em rgba(31, 0, 0, 0.253)); */
-    font-family: 'Nunito', sans-serif;
+    font-family: $bigFont;
     // background: #00000023;    
     text-align: center;
 
@@ -184,7 +140,11 @@ p{
 }
 
 #emphasis{
-    color: #000000;
-    font-weight: bold;
+    color: #464646;
+    // font-weight: bold;
     // filter: drop-shadow(0px 0px 1px black);
+}
+
+mark{
+    background-color: #0000001a;
 }
