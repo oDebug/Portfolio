@@ -1,0 +1,41 @@
+.card{
+    margin-left: 1em;
+    margin-right: 1em;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: min-content auto;
+    grid-template-areas: "text" "audio";
+
+    // border-radius: 10px;
+    background: #081d2b ;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.9);
+    text-align: center;
+    height: 250px;
+
+    .card-audio{
+        grid-area: audio;
+        align-self: end;
+        audio{
+
+        }
+    }
+    .card-text{
+        grid-area: text;
+        margin: 25px;
+    }
+
+ 
+}
+
+.card-text h2{
+    color:rgb(150, 150, 150);
+    font-size: 20px;
+}
+
+.card-text p{
+    font-size: 16px;
+}   
+
+#artist{
+    color: rgb(122, 23, 23);
+}
