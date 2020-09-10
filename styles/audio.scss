@@ -69,8 +69,10 @@ html{
     height: 100vh;
     background-color: #080808;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: min-content;
+    // grid-auto-flow: row;
     justify-items: center;
     padding-top: 5em; 
     padding-right: 7em; 
@@ -81,6 +83,11 @@ html{
             color: $niceRed;
             margin-bottom: .5em;
         }
+    }
+    .card-row{
+        display: flex;
+        flex-wrap: wrap;
+        grid-column: 1/6;
     }
 }
 

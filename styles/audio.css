@@ -59,6 +59,7 @@ nav li {
 .card {
   margin-left: 1em;
   margin-right: 1em;
+  margin-bottom: 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 300px;
@@ -167,8 +168,6 @@ html {
   background-color: #080808;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
   justify-items: center;
@@ -186,6 +185,17 @@ html {
 #three .top-row h1 {
   color: #7a1717;
   margin-bottom: .5em;
+}
+
+#three .card-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
 }
 
 #four {

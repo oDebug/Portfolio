@@ -59,6 +59,7 @@ nav li {
 .card {
   margin-left: 1em;
   margin-right: 1em;
+  margin-bottom: 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 300px;
