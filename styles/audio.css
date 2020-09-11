@@ -137,16 +137,7 @@ html {
   font-family: "Nunito", sans-serif;
 }
 
-.section-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 3fr 1fr;
-      grid-template-columns: 1fr 3fr 1fr;
-  grid-auto-rows: minmax(100px, auto);
-  justify-items: center;
-}
-
-.section-wrapper > div {
+#two > div {
   padding: 1em;
 }
 
@@ -156,9 +147,21 @@ html {
   min-height: 100vh;
   overflow: hidden;
   position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  justify-items: center;
 }
 
 #two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  justify-items: center;
   background: #081d2b;
   padding-top: 60px;
   grid-auto-rows: -webkit-min-content auto;
@@ -166,7 +169,9 @@ html {
 }
 
 #three {
-  height: 110vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   background-color: #080808;
   display: -ms-grid;
   display: grid;
@@ -201,8 +206,39 @@ html {
   grid-column: 1/6;
 }
 
+#three span > a > i:hover {
+  color: #7a1717;
+}
+
 #four {
-  height: 80vh;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  padding-top: 5em;
+  text-align: center;
+}
+
+#four h1 {
+  color: #7a1717;
+  margin-bottom: .5em;
+}
+
+#four .video-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#four .video-row iframe {
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 #bigName {
@@ -306,6 +342,16 @@ mark {
   }
   100% {
     color: rgba(255, 255, 255, 0.308);
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  #two {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #two > div {
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=audio.css.map */
