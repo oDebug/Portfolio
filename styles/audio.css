@@ -218,6 +218,7 @@ html {
   grid-auto-rows: min-content;
   padding-top: 5em;
   text-align: center;
+  background: #081d2b;
 }
 
 #four h1 {
