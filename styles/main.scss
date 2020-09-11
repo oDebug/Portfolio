@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('../fonts/italiana.css');
+@import url('../fonts/nunito.css');
 @import './nav';
 @import './variables';
+@import './card';
 
 *{
     margin:0;
@@ -43,8 +46,8 @@ html{
     padding: 1em;
 }
 
-section{
-    
+#nav{
+    grid-area: nav;
 }
 
 #one{
@@ -58,6 +61,7 @@ section{
     min-height: 100vh;
     overflow: hidden;
     position: relative;
+    grid-area: one;
 }
 #two{
     background: #d5efff ;
@@ -68,15 +72,19 @@ section{
     padding-top: 60px;
     // height: 100vh;
     grid-auto-rows: min-content auto;
+    grid-area: two;
 }
 
 #three{
-    height: 100vh;
+    height: 100vh;      
+    padding-top: 5em; 
+    grid-area: three;
 }
 
 #four{
     height: 80vh;
     background-color: #99c9ad;
+    grid-area: four;
 }
 
 #bigName{
@@ -96,12 +104,21 @@ section{
     font-family: $bigFont;
     // background: #00000023;    
     text-align: center;
+    a{
+        text-decoration: none;
+        animation: link-animation 1s infinite alternate;
+    }
 
 }
 
 #about{
-    display: grid;
+    //display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    h1{
+        text-align: center;
+    }
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #skills{
@@ -149,3 +166,20 @@ p{
 mark{
     background-color: #0000001a;
 }
+
+@keyframes link-animation{
+    0%{
+        color: white;
+        filter: drop-shadow(0px 0px 4px white);
+    }
+    100%{
+        color: rgba(255, 255, 255, 0.308);
+    }
+}
+
+// @media only screen and (max-width: 550px){
+//     #two{
+//         grid-template-columns: 1fr;
+//         grid-template-rows: 0.4fr, 0.5fr, 0.fr;
+//     }
+// }
