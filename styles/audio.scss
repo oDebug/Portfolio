@@ -66,21 +66,29 @@ html{
 }
 
 #three{
-    height: 100vh;
+    height: 110vh;
     background-color: #080808;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: min-content;
+    // grid-auto-flow: row;
     justify-items: center;
     padding-top: 5em; 
     padding-right: 7em; 
     padding-left: 7em;
     .top-row{
         grid-column: 1 / 6;
+        text-align: center;
         h1{
             color: $niceRed;
-            margin-bottom: .5em;
         }
+        margin-bottom: .8em;
+    }
+    .card-row{
+        display: flex;
+        flex-wrap: wrap;
+        grid-column: 1/6;
     }
 }
 
@@ -111,6 +119,11 @@ html{
     grid-template-columns: 1fr 3fr 1fr;
     h1{
         color: $niceRed;
+    }
+    img{
+        border-radius: 50%;
+        width:120px;
+        margin:5px;
     }
 }
 

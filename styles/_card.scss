@@ -1,6 +1,7 @@
 .card{
     margin-left: 1em;
     margin-right: 1em;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: 300px;
     grid-template-rows: min-content auto;
@@ -9,7 +10,7 @@
     background: #081d2b ;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.9);
     text-align: center;
-    height: 250px;
+    height: 220px;
 
     .card-audio{
         grid-area: audio;
