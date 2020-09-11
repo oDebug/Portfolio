@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <!--MAKE HOME A DROPDOWN THAT ALLOWS YOU TO TOGGLE BETWEEN THE PROGRAMMER AND AUDIO PAGES-->
+    <!--Nav section in focus should change text to niceRed-->
 <head>
     <link rel="stylesheet" href="styles/audio.css" type="text/css">
 </head>
 <body>
     <header>
-        <div>
-            <nav class="nav-container">
-                <div class="content">
-                   <ul class="nav-list">
-                        <li><a href="#one">Home</a></li>
-                        <li><a href="#two">About</a></li>
-                        <li><a href="#three">Music</a></li>
-                        <li><a href="#four">Portfolio</a></li>
-                        <li><a href="#">Skills</a></li>
-                    </ul> 
-                </div>                
-            </nav>
-        </div>
+        <nav class="nav-container">
+            <div class="content">
+                <ul class="nav-list">
+                    <li><a href="#one">Home</a></li>
+                    <li><a href="#two">About</a></li>
+                    <li><a href="#three">Music</a></li>
+                    <li><a href="#four">Portfolio</a></li>
+                    <li><a href="#">Skills</a></li>
+                </ul> 
+            </div>                
+        </nav>
     </header>    
     
     <section id="one" class="section-wrapper">
@@ -34,7 +32,7 @@
     <section id="two" class="section-wrapper">
         <div></div>
         <div id="about">
-            <div></div>
+            <div><img src="/media/portraitCropped.jpg"></div>
             <div>
                 <h1>About</h1>
                 <p>For over a decade I've been playing with music production as a hobby. I've gotten more serious about it over the years. I like to stay close to the experimental side of things. I love seeing what can be done with 3D binaural audio (HRTF). I've began to take sample collection and recording really seriously as of late.</p>
@@ -67,11 +65,15 @@
     </section>
 
     <section id="three">
-        <div class="top-row"><h1>Music</h1></div>
-        <div class="card">            
+        <div class="top-row">
+            <h1>Music</h1>
+            <h3>A small sampling of tracks I've made</h3>
+        </div>
+        <div class="card-row">
+            <div class="card">            
             <div class="card-text">
                 <h2><span id="artist">Debug</span> - Strafe</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, minima. A provident quaerat eligendi reiciendis.</p>
+                <p>A track inspired by Mick Gordon's work on the DOOM soundtrack.</p>
             </div>
             <div class="card-audio">
                 <audio controls>
@@ -131,8 +133,139 @@
                 </audio>
             </div>
         </div>
+        <div class="card">            
+            <div class="card-text">
+                <h2><span id="artist">Debug</span> - Unexpected Emotion</h2>
+                <p>A sort of general video game background track.</p>
+            </div>
+            <div class="card-audio">
+                <audio controls>
+                    <source src="/media/Unexpected Emotion.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+        <div class="card">            
+            <div class="card-text">
+                <h2><span id="artist">Debug</span> - Head Ache</h2>
+                <p>A sort of general video game background track.</p>
+            </div>
+            <div class="card-audio">
+                <audio controls>
+                    <source src="/media/Head Ache.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+        <div class="card">            
+            <div class="card-text">
+                <h2><span id="artist">Debug</span> - Head Sick</h2>
+                <p>A sort of general video game background track.</p>
+            </div>
+            <div class="card-audio">
+                <audio controls>
+                    <source src="/media/Head Sick.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+        <div class="card">            
+            <div class="card-text">
+                <h2><span id="artist">Debug</span> - Blinx</h2>
+                <p>A sort of general video game background track.</p>
+            </div>
+            <div class="card-audio">
+                <audio controls>
+                    <source src="/media/blinxFixed.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+        <div class="card">            
+            <div class="card-text">
+                <h2><span id="artist">Debug</span> - Whiterun</h2>
+                <p>A sort of general video game background track.</p>
+            </div>
+            <div class="card-audio">
+                <audio controls>
+                    <source src="/media/whiterun.mp3" type="audio/mp3">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-row" style="margin-top: 4em;"><h1>SFX & Foley</h1><h3>Beeps and boops</h3></div>
+
+    <div class="card" style="height: auto;">            
+        <div class="card-text">
+            <h2>Electrical Arcs</h2>
+        </div>
+        <div class="card-audio">
+            <audio controls>
+                <source src="/media/SFX/ElectricalArcs.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    </div>
+    <div class="card" style="height: auto;">            
+        <div class="card-text">
+            <h2>Vocal Processing</h2>
+        </div>
+        <div class="card-audio">
+            <audio controls>
+                <source src="/media/SFX/VOXProcesings.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    </div>
+    <div class="card" style="height: auto;">            
+        <div class="card-text">
+            <h2>Gore impact</h2>
+        </div>
+        <div class="card-audio">
+            <audio controls>
+                <source src="/media/SFX/thudsquishies1.wav" type="audio/wav">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    </div>
+
+    <div class="card" style="height: auto;">            
+        <div class="card-text">
+            <h2>Squish</h2>
+        </div>
+        <div class="card-audio">
+            <audio controls>
+                <source src="/media/SFX/squish2.wav" type="audio/wav">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    </div>
+    <div class="card" style="height: auto;">            
+        <div class="card-text">
+            <h2>Horror Dialogue</h2>
+        </div>
+        <div class="card-audio">
+            <audio controls>
+                <source src="/media/SFX/Vocaboca3.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    </div>  
+    <div class="card" style="height: auto;">            
+        <div class="card-text">
+            <h2>Coldddddd</h2>
+        </div>
+        <div class="card-audio">
+            <audio controls>
+                <source src="/media/SFX/cold2.wav" type="audio/wav">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    </div>       
     </section>
-    
+
     <section id="four">
         
         
