@@ -180,11 +180,12 @@ html {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-column: 1 / 6;
+  text-align: center;
+  margin-bottom: .8em;
 }
 
 #three .top-row h1 {
   color: #7a1717;
-  margin-bottom: .5em;
 }
 
 #three .card-row {

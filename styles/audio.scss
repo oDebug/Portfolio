@@ -79,10 +79,11 @@ html{
     padding-left: 7em;
     .top-row{
         grid-column: 1 / 6;
+        text-align: center;
         h1{
             color: $niceRed;
-            margin-bottom: .5em;
         }
+        margin-bottom: .8em;
     }
     .card-row{
         display: flex;
