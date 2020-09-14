@@ -332,6 +332,12 @@ button {
   font-family: "Nunito", sans-serif;
 }
 
+.btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
 .btn::before, .btn::after {
   content: "";
   position: absolute;
@@ -362,3 +368,4 @@ button {
   right: 80%;
 }
 /*# sourceMappingURL=main.css.map */
+
