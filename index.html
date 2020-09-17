@@ -23,7 +23,7 @@
     <section id="one" class="section-wrapper">
         <div></div>
         <div style="align-self: center;">
-            <video class="video-bg" autoplay muted loop src="media/modularfolio1080pNoAudioPlus.mp4"></video>
+            <video class="video-bg" autoplay muted loop src="media/code.mp4"></video>
             <h1 id="bigName">CHRIS MEIER</h1>
             <h3 id="titles">PROGRAMMER | <a href="audio.html">SOUND DESIGNER | MUSICIAN</a></h3>
             
@@ -103,16 +103,48 @@
             </div>
         </div>
         <div></div>
-        <div></div>
         <!-- <a href="#" class="myButton">Resume</a> -->
-        <div class="btn-div"><button class="btn"><a target="_blank" href="media/meier2020.pdf">Resume</a></button></div>
+        
         
     </section>
     <section id="three" class="section-wrapper" style="padding-top: 5em;">
         <div></div>
-        <!-- <embed src="media/meier2020.pdf" width="700" height="100%" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html"> -->
+        <div class="btn-div"><button class="btn" onclick="resume()">Resume</button></div>
         <div></div>
     </section>
-    <section id="four"></section>
+    <section id="four">
+        <h1>Portfolio</h1>
+        <div id="fourContent">
+            <div class="bigCard">
+                <div class="bigCard-media">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0P8j3zKbJ5c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="bigCard-text">
+                    <h2>Contact Management Application</h2>
+                    <p>Technologies used: Java, HTML, Bootstrap 4 + CSS, Javascript, Ajax, jQuery, MySQL.</p>
+                </div>
+            </div>
+
+            <div class="bigCard">
+                <div class="bigCard-media">
+                    <a target="_blank" href="https://meierflashcards.netlify.app/">
+                        <img src="/media/Screenshot_2018-10-28 myappclear.png" alt="">
+                    </a>
+                </div>
+                <div class="bigCard-text">
+                    <h2>vue.js Flashcard Application</h2>
+                    <p>Technologies used: vue.js, HTML, JSON, Bootstrap 4. </p> <p>This version is a static web page version. Previously, it ran locally with a PHP server and a MySQL database.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function resume(){
+            window.open('media/meier2020.pdf', "_blank");
+        }
+    </script>
 </body>
 </html>
+
+<!-- https://meierflashcards.netlify.app/ -->

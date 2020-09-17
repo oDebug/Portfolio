@@ -6,6 +6,7 @@
 @import './nav';
 @import './variables';
 @import './card';
+@import './bigCard';
 
 *{
     margin:0;
@@ -65,25 +66,35 @@ html{
 #two{
     color: #001725 ;
     background-color: #99c9ad;
-    /* 
-    #818181
-    #616E62
-    #653C47 */
     padding-top: 60px;
-    // height: 100vh;
 }
 
 #three{
-    height: 100vh;      
-    padding-top: 5em; 
-    grid-area: three;
+    // height: 20vh;      
+    padding-top: 5em;
     background-color: #99c9ad;
 }
 
 #four{
-    height: 80vh;
-    background-color: #99c9ad;
-    grid-area: four;
+    display:grid;
+    grid-auto-rows: min-content;
+    height: 100vh;
+    padding-top: 5em;
+    background-color: #00a5ce;
+    h1{
+        justify-self: center;
+        padding-bottom: 20px;
+    }
+}
+
+#fourContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fourItem{
+
 }
 
 #bigName{
@@ -121,6 +132,12 @@ html{
 
 #languages{
     font-size: 20px;
+    list-style-type: none;
+    font-weight: bold;
+    ul > * {
+        font-weight: normal;
+        font-size: 18px;
+    }
 }
 
 /* #one{
@@ -216,7 +233,7 @@ button{
     background:none;
     border: 4px solid;
     //color: #001725;
-    color: rgb(0, 112, 107);
+    color: $buttonColor;
     font-weight: 700;
     cursor: pointer;
     font-size: 16px;
@@ -249,9 +266,17 @@ button{
     right: 80%;
 }
 
+.btnAnchor{
+    text-decoration: none;
+    color: $buttonColor;
+}
 
 // .btn-div{
 //     display: flex;
 //     align-items: center;
 //     justify-content: center;
 // }
+
+a > img{
+    width: 370px;
+}
