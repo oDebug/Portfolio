@@ -444,4 +444,17 @@ button {
 a > img {
   width: 370px;
 }
+
+#about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
+#about img {
+  border-radius: 50%;
+  width: 120px;
+  margin: 5px;
+}
 /*# sourceMappingURL=main.css.map */
