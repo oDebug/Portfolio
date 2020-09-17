@@ -87,7 +87,7 @@ nav li {
 }
 
 .card .card-text {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: text;
   margin: 25px;
@@ -100,6 +100,59 @@ nav li {
 
 .card-text p {
   font-size: 16px;
+}
+
+#artist {
+  color: #7a1717;
+}
+
+.bigCard {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 700px;
+      grid-template-columns: 700px;
+  -ms-grid-rows: auto min-content;
+      grid-template-rows: auto -webkit-min-content;
+      grid-template-rows: auto min-content;
+      grid-template-areas: "media" "text";
+  background: #081d2b;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  height: auto;
+}
+
+.bigCard .bigCard-media {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: media;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.bigCard .bigCard-media iframe {
+  margin-top: 20px;
+}
+
+.bigCard .bigCard-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
+  margin: 25px;
+}
+
+.bigCard-text h2 {
+  color: #969696;
+  font-size: 20px;
+}
+
+.bigCard-text p {
+  font-size: 16px;
+  color: white;
 }
 
 #artist {
@@ -162,30 +215,44 @@ html {
   min-height: 100vh;
   overflow: hidden;
   position: relative;
-  grid-area: one;
 }
 
 #two {
   color: #001725;
   background-color: #99c9ad;
-  /* 
-    #818181
-    #616E62
-    #653C47 */
   padding-top: 60px;
 }
 
 #three {
-  height: 100vh;
   padding-top: 5em;
-  grid-area: three;
   background-color: #99c9ad;
 }
 
 #four {
-  height: 80vh;
-  background-color: #99c9ad;
-  grid-area: four;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  height: 100vh;
+  padding-top: 5em;
+  background-color: #00a5ce;
+}
+
+#four h1 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding-bottom: 20px;
+}
+
+#fourContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #bigName {
@@ -224,6 +291,13 @@ html {
 
 #languages {
   font-size: 20px;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+#languages ul > * {
+  font-weight: normal;
+  font-size: 18px;
 }
 
 /* #one{
@@ -332,12 +406,6 @@ button {
   font-family: "Nunito", sans-serif;
 }
 
-.btn a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
 .btn::before, .btn::after {
   content: "";
   position: absolute;
@@ -367,5 +435,13 @@ button {
 .btn:hover::after {
   right: 80%;
 }
-/*# sourceMappingURL=main.css.map */
 
+.btnAnchor {
+  text-decoration: none;
+  color: #00706b;
+}
+
+a > img {
+  width: 370px;
+}
+/*# sourceMappingURL=main.css.map */
