@@ -93,10 +93,6 @@ html{
     justify-content: center;
 }
 
-.fourItem{
-
-}
-
 #bigName{
     font-size: 6.5vw;
     font-family: $font;
@@ -279,4 +275,14 @@ button{
 
 a > img{
     width: 370px;
+}
+
+#about{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    img{
+        border-radius: 50%;
+        width:120px;
+        margin:5px;
+    }
 }
