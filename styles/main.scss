@@ -274,7 +274,7 @@ button{
 // }
 
 a > img{
-    width: 370px;
+    width: 350px;
 }
 
 #about{
@@ -284,5 +284,22 @@ a > img{
         border-radius: 50%;
         width:120px;
         margin:5px;
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    #bigName{
+        font-size: 90px;
+        font-family: $font;
+        color: #ffffff9f;
+    }
+    #titles{
+        font-size: 14px;
+        color: #ffffff;
+        font-family: $bigFont;   
+        text-align: center;    
+    }
+    #four{
+        height: min-content;
     }
 }
