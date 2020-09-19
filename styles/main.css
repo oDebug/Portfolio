@@ -112,15 +112,13 @@ nav li {
   margin-bottom: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 700px;
-      grid-template-columns: 700px;
+  -ms-grid-columns: 600px;
+      grid-template-columns: 600px;
   -ms-grid-rows: auto min-content;
       grid-template-rows: auto -webkit-min-content;
       grid-template-rows: auto min-content;
       grid-template-areas: "media" "text";
-  background: #081d2b;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+  background: #fdf0f0;
   text-align: center;
   height: auto;
 }
@@ -146,13 +144,13 @@ nav li {
 }
 
 .bigCard-text h2 {
-  color: #969696;
+  color: black;
   font-size: 20px;
 }
 
 .bigCard-text p {
   font-size: 16px;
-  color: white;
+  color: #646464;
 }
 
 #artist {
@@ -219,13 +217,13 @@ html {
 
 #two {
   color: #001725;
-  background-color: #99c9ad;
+  background-color: #ffffff;
   padding-top: 60px;
 }
 
 #three {
   padding-top: 5em;
-  background-color: #99c9ad;
+  background-color: #ffffff;
 }
 
 #four {
@@ -235,7 +233,7 @@ html {
   grid-auto-rows: min-content;
   height: 100vh;
   padding-top: 5em;
-  background-color: #00a5ce;
+  background-color: #ffffff;
 }
 
 #four h1 {
@@ -394,11 +392,11 @@ button {
 }
 
 .btn {
-  width: 200px;
+  width: 400px;
   height: 60px;
   background: none;
   border: 4px solid;
-  color: #00706b;
+  color: #001725;
   font-weight: 700;
   cursor: pointer;
   font-size: 16px;
@@ -411,7 +409,7 @@ button {
   position: absolute;
   width: 14px;
   height: 4px;
-  background: #99c9ad;
+  background: #ffffff;
   -webkit-transform: skewX(50deg);
           transform: skewX(50deg);
   -webkit-transition: .2s linear;
@@ -438,7 +436,7 @@ button {
 
 .btnAnchor {
   text-decoration: none;
-  color: #00706b;
+  color: #001725;
 }
 
 a > img {
@@ -475,5 +473,9 @@ a > img {
     height: -moz-min-content;
     height: min-content;
   }
+}
+
+.bigCard-text {
+  padding: 0px 50px;
 }
 /*# sourceMappingURL=main.css.map */
