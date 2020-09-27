@@ -29,11 +29,11 @@ nav .content {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: white !important;
 }
 
 nav a:hover {
-  color: #7a1717;
+  color: #7a1717 !important;
   font-weight: bold;
 }
 
@@ -110,6 +110,21 @@ nav li {
   margin: 0;
   scrollbar-width: auto;
   scrollbar-color: black #6e6e6e;
+}
+
+.high-contrast {
+  color: #9b9b9b;
+}
+
+.high-contrast a {
+  color: #9b9b9b;
+}
+
+.normal-contrast {
+  color: #444444;
+}
+
+.normal-contrast a {
   color: #444444;
 }
 
@@ -240,6 +255,12 @@ html {
 #four .video-row iframe {
   margin-left: 1em;
   margin-right: 1em;
+}
+
+#four .contact-row {
+  color: white;
+  margin-top: 4em;
+  background-color: black;
 }
 
 #bigName {
