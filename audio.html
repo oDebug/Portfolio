@@ -2,9 +2,10 @@
 <html>
     <!--Nav section in focus should change text to niceRed-->
 <head>
-    <link rel="stylesheet" href="styles/audio.css" type="text/css">
+    <link rel="stylesheet" href="styles/audio.css" type="text/css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>
+<body class="normal-contrast">
     <header>
         <nav class="nav-container">
             <div class="content">
@@ -12,7 +13,8 @@
                     <li><a href="#one">Home</a></li>
                     <li><a href="#two">About</a></li>
                     <li><a href="#three">Music</a></li>
-                    <li><a href="#four">Scored</a></li>
+                    <li><a href="#four">Scored</a></li>                    
+                    <li><a href="javascript:toggleText()">Toggle Text</a></li>
                 </ul> 
             </div>                
         </nav>
@@ -66,7 +68,7 @@
         <div class="top-row">            
             <h1>Music</h1>
             <h3>A small sampling of tracks I've made</h3>
-                <span style="letter-spacing: 5px;">
+                <span id="social-link" class="normal-contrast" style="letter-spacing: 5px;">
                     <a target="_blank" href="https://www.instagram.com/odebugo/"><i class="fab fa-instagram"></i></a>
                     <a target="_blank" href="https://soundcloud.com/processxl"><i class="fab fa-soundcloud"></i></a>
                     <a target="_blank" href="https://www.youtube.com/channel/UC_Ms-TmSczP2FueBOJ0OrNw"><i class="fab fa-youtube"></i></a>
@@ -287,7 +289,12 @@
             <iframe title="vimeo-player" src="https://player.vimeo.com/video/388761155" width="560" height="315" frameborder="0" allowfullscreen></iframe>
 
             <iframe title="vimeo-player" src="https://player.vimeo.com/video/246723422" width="560" height="315" frameborder="0" allowfullscreen></iframe>
-         </div>      
+         </div>  
+         <div class="contact-row">
+             <h4>Feel free to contact me via email or social media</h4>
+             <br>
+             <h5>cmeier640@gmail.com</h5>
+         </div>    
     </section>
 </body>
 <script>
@@ -295,6 +302,11 @@
     audio.forEach(volumeChange);
     function volumeChange(item, index){
         item.volume = 0.5;
+    }
+    function toggleText()
+    {
+        $("body").toggleClass('high-contrast normal-contrast');
+        $("#social-link").toggleClass('high-contrast normal-contrast');
     }
 </script>
 <script src="https://kit.fontawesome.com/1123127c7d.js" crossorigin="anonymous"></script>
